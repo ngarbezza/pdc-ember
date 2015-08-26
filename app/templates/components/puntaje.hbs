@@ -1,0 +1,5 @@
+{{#each estrellas as |estrella|}}
+  <span class="star-rating glyphicon {{if estrella.llena 'glyphicon-star' 'glyphicon-star-empty'}}"
+    {{action "cambiarPuntaje" estrella.puntaje}}>
+  </span>
+{{/each}}

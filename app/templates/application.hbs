@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div class="container">
+  <div class="page-header">
+    {{#link-to "index"}}
+      <h1>Rock & Roll
+        <small> con Ember.js</small>
+      </h1>
+    {{/link-to}}
+  </div>
+  <div class="row">
+    {{outlet}}
+  </div>
+</div>
