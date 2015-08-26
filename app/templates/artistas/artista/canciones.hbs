@@ -12,7 +12,7 @@
 {{#each cancionesOrdenadas as |cancion|}}
   <div class="list-group-item">
     {{cancion.titulo}}
-    {{puntaje item=cancion puntaje=cancion.puntaje puntajeMaximo=5 setAction="cambiarPuntaje"}}
+    {{component puntaje item=cancion puntaje=cancion.puntaje puntajeMaximo=5 setAction="cambiarPuntaje"}}
   </div>
 {{else}}
   {{#unless puedeCrearCancion}}
