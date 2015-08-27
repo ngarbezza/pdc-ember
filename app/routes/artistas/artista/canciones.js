@@ -43,7 +43,7 @@ export default Ember.Route.extend({
           puntaje = params.puntaje;
 
       if (cancion.get('puntaje') === puntaje) {
-        rating = null;
+        puntaje = null;
       }
       cancion.set('puntaje', puntaje);
       return cancion.save();
