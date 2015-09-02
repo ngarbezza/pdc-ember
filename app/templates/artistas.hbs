@@ -8,7 +8,7 @@
     </div>
     {{#each model as |artista|}}
       {{#link-to "artistas.artista.canciones" artista class="list-group-item band-link"}}
-        {{artista.nombre}}
+        <span class="nombre-artista">{{artista.nombre}}</span>
         <span class="pointer glyphicon glyphicon-chevron-right"></span>
       {{/link-to}}
     {{/each}}
